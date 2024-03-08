@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <main id="mainSection">
+      <section>
+        <img src="src/logo.png" alt="library logo" width="100px" class="logo" />
+      </section>
+      <section id="informationOfBook">
+        <div>
+          <label for="booksName">نام | کد کتاب</label>
+          <br />
+          <input type="text" id="booksName" />
+          <br />
+          <label for="pages">تعداد صفحات</label>
+          <br />
+          <input type="number" id="pages" />
+          <br />
+          <label for="authorName">نام نویسنده</label>
+          <br />
+          <input type="text" id="authorName" />
+          <br />
+          <span id="help"
+            >جهت ثبت کتاب نام کتاب را وارد نمایید و جهت حذف آن کد را وارد
+            کنید.</span
+          >
+        </div>
+      </section>
+      <div class="btn">
+        <button onclick="addBook()" id="button">ثبت کتاب</button>
+
+        <button onclick="deleteBook()" id="button1">حذف کتاب</button>
+      </div>
+    </main>
+    <div class="booksList">
+      <table id="result-table">
+        <thead>
+          <tr>
+            <th width="150px">کد کتاب</th>
+            <th>نام کتاب</th>
+            <th width="150px">تعداد صفحات</th>
+            <th>نویسنده</th>
+            <th width="100px">حذف کتاب</th>
+          </tr>
+        </thead>
+        <tbody id="result-body"></tbody>
+      </table>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+@font-face {
+  font-family: yekan;
+  src: url(fonts/Yekan.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: yekan;
+}
+
+body {
+  direction: rtl;
+  background-color: #c1c8e3;
+  background-image: url(back.jpg);
+}
+
+header {
+  padding: 15px;
+  border-bottom: 1px solid #aaa;
+  box-shadow: 0px 1px 3px 3px #ccc;
+  background: #fff;
+}
+
+#mainSection .logo {
+  margin-top: 20px;
+}
+
+#mainSection {
+  text-align: center;
+  margin: 60px auto;
+  background-color: #fbf9fa;
+  width: 40%;
+  border-radius: 10px;
+  min-height: 400px;
+  box-shadow: 0 0 40px rgb(0 0 0 / 15%) !important;
+}
+
+#informationOfBook {
+  direction: rtl;
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+label {
+  margin-top: 5px;
+}
+
+input {
+  font-size: 20px;
+  color: rgb(85, 84, 84);
+  border-radius: 50px;
+  border: none;
+  width: 90%;
+  height: 25px;
+  padding: 5px 17px;
+  margin: 10px 0;
+  box-shadow: 0 5px 30px 0px rgb(0 0 0 / 10%);
+}
+
+button {
+  border-radius: 100px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 15px 50px 20px;
+}
+#help {
+  color: #aaa;
+}
+
+#button {
+  background-color: #c2fbd7;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: green;
+}
+
+#button:hover {
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+#button1 {
+  background-color: #fbc2c2;
+  color: red;
+  box-shadow: rgba(187, 44, 44, 0.2) 0 -25px 18px -14px inset,
+    rgba(187, 44, 44, 0.15) 0 1px 2px, rgba(187, 44, 44, 0.15) 0 2px 4px,
+    rgba(187, 44, 44, 0.15) 0 4px 8px, rgba(187, 44, 44, 0.15) 0 8px 16px,
+    rgba(187, 44, 44, 0.15) 0 16px 32px;
+}
+
+#button1:hover {
+  box-shadow: rgba(187, 44, 44, 0.35) 0 -25px 18px -14px inset,
+    rgba(187, 44, 44, 0.25) 0 1px 2px, rgba(187, 44, 44, 0.25) 0 2px 4px,
+    rgba(187, 44, 44, 0.25) 0 4px 8px, rgba(187, 44, 44, 0.25) 0 8px 16px,
+    rgba(187, 44, 44, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+table {
+  width: 100%;
+}
+
+table .title {
+  width: 20%;
+}
+
+table .content {
+  width: 80%;
+}
+
+#result-table thead {
+  background: #8a93b9;
+  color: #eee;
+}
+
+#result-table tr td {
+  text-align: center;
+
+  padding: 3px;
+}
+#result-table tr:nth-child(n) {
+  background: #8a93b9;
+}
+#result-table tr:nth-child(2n) {
+  background: #c1c8e3;
+}
+.removBook {
+  color: red;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 5px 10px;
+}
+.removBook:hover {
+  background-color: red;
+  color: black;
+  border-radius: 30px;
+  padding: 3px 10px 0;
+}
